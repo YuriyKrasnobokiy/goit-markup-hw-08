@@ -1,0 +1,56 @@
+/* OUR WORK */
+
+.work {
+  padding: 0;
+  padding-bottom: 94px;
+}
+
+.work__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.work-list__item {
+  flex-basis: calc(100% / 3 - 30px);
+  &:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.work-list__card {
+  position: relative;
+}
+
+.work-list__card-content {
+  display: flex;
+  position: absolute;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  background: var(--our-work-desc-bg);
+}
+
+.work-list__card-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--our-work-desc-color);
+}

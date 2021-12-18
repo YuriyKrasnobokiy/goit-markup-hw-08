@@ -1,0 +1,14 @@
+.filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -8px;
+  /* margin-bottom: -8px; */
+  min-width: 611px;
+}
+
+.filter__item {
+  display: inline-flex;
+  margin-right: 8px;
+  /* margin-bottom: 8px; */
+}
