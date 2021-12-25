@@ -774,7 +774,7 @@ body {
     align-items: center;
   }
   .contacts__list .contacts__item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 30px;
     margin-bottom: 0;
   }
 }
