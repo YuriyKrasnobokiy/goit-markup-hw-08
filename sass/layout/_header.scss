@@ -25,13 +25,8 @@
   display: flex;
   align-items: center;
 
-  // padding-top: 16px;
-  // padding-bottom: 16px;
-
   @media screen and (min-width: 768px) {
     margin-right: 94px;
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
 }
 
@@ -43,6 +38,11 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .contacts__list {

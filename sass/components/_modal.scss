@@ -29,12 +29,16 @@
   transform: scale(1) translate(-50%, -50%) skew(180deg);
   transition: transform var(--time) var(--function-cubic);
 
-  height: 581px;
+  min-height: 581px;
   width: 528px;
 
   background-color: var(--modal-background-color);
   box-shadow: var(--modal-box-shadow);
   border-radius: 4px;
+
+  @media (max-width: 768px) {
+    width: 450px;
+  }
 }
 
 .is-hidden {

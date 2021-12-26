@@ -41,7 +41,8 @@
 
 .menu-toggle-open {
   height: 40px;
-  width: 40px;
+  min-width: 40px;
+  padding: 0;
   background-color: transparent;
   transition: fill var(--time) var(--function-cubic);
 
@@ -58,6 +59,8 @@
 }
 
 .menu-toggle-close {
+  display: flex;
+  padding: 0;
   position: absolute;
   top: -38px;
   right: -25px;

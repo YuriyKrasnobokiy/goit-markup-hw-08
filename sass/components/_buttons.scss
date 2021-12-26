@@ -49,11 +49,11 @@
 }
 
 .submit__button {
-  display: flex;
+  display: inline-flex;
 
   min-width: 200px;
   height: 50px;
-  margin-left: 12px;
+
   padding: 10px 29px;
 
   font-weight: 700;
@@ -72,6 +72,11 @@
   &:hover,
   &:focus {
     background-color: var(--modal-button-focus-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 12px;
   }
 }
 
@@ -100,6 +105,10 @@
   &:hover {
     fill: var(--accent-color);
   }
+
+  // @media (min-width: 480px) {
+  //   right: 25px;
+  // }
 }
 
 .close-icon {
