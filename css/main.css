@@ -86,12 +86,6 @@ img {
   height: auto;
 }
 
-picture {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 body {
   background-color: var(--body-bg-color);
   color: var(--body-color);
@@ -127,15 +121,10 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     max-width: 480px;
+    overflow: hidden;
   }
 }
 
@@ -617,6 +606,7 @@ body {
   height: 100%;
   justify-content: space-between;
   padding: 0;
+  overflow: unset;
 }
 
 @media screen and (min-width: 768px) {
