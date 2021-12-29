@@ -124,13 +124,12 @@ body {
 @media screen and (max-width: 767px) {
   .container {
     max-width: 480px;
-    overflow: hidden;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
@@ -606,7 +605,6 @@ body {
   height: 100%;
   justify-content: space-between;
   padding: 0;
-  overflow: unset;
 }
 
 @media screen and (min-width: 768px) {
@@ -1071,20 +1069,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 768px) {
-  .team-list__item .team-list__card {
-    width: 354px;
-    height: 536px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-list__item .team-list__card {
-    width: 270px;
-    height: 428px;
-  }
-}
-
 .team-list__item .team-list__card-content {
   line-height: 1.19;
   text-align: center;
@@ -1492,6 +1476,12 @@ body {
 @media (min-width: 768px) {
   .examples__list {
     display: flex;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .examples__list {
     margin-top: 50px;
   }
 }
@@ -1502,9 +1492,29 @@ body {
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  .examples-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .examples-list__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
 .card__link {
   display: block;
   transition: box-shadow var(--time) var(--function-cubic);
+}
+
+@media (min-width: 768px) {
+  .card__link {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
 }
 
 .card__link:focus, .card__link:hover {
@@ -1536,11 +1546,11 @@ body {
   position: absolute;
   transform: translateY(101%);
   transition: transform var(--time) var(--function-cubic);
-  /* overflow: auto; */
 }
 
 .card__content {
   padding: 20px 24px;
+  flex-grow: 1;
   border: 1px solid var(--card-content-border);
   background: var(--white);
 }
