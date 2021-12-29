@@ -1,14 +1,18 @@
 .filter__list {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: center;
   margin-right: -8px;
-  /* margin-bottom: -8px; */
-  min-width: 611px;
+  margin-bottom: -15px;
+  // min-width: 611px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .filter__item {
   display: inline-flex;
   margin-right: 8px;
-  /* margin-bottom: 8px; */
+  margin-bottom: 15px;
 }

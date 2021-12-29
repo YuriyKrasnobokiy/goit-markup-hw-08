@@ -9,12 +9,15 @@
 /* GALLERY */
 
 .examples__list {
-  display: flex;
-
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-right: -30px;
   margin-bottom: -30px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 .examples-list__item {
