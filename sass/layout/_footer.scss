@@ -225,7 +225,7 @@
 
 .submit__input {
   height: 50px;
-  min-width: 450px;
+  width: 358px;
   outline: none;
   background-color: transparent;
   border: 1px solid var(--submit-input-border-color);
@@ -248,8 +248,11 @@
     color: var(--submit-input-placeholder-color);
   }
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
-    min-width: 358px;
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 1199px) {
+    width: 450px;
   }
 }
