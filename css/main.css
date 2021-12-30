@@ -1508,7 +1508,6 @@ body {
 .examples__list {
   flex-wrap: wrap;
   margin-top: 40px;
-  margin-right: -30px;
   margin-bottom: -30px;
 }
 
@@ -1516,6 +1515,7 @@ body {
   .examples__list {
     display: flex;
     margin-top: 30px;
+    margin-right: -30px;
   }
 }
 
@@ -1527,13 +1527,13 @@ body {
 
 .examples-list__item {
   flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
   .examples-list__item {
     flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
   }
 }
 
