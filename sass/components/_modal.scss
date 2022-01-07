@@ -31,11 +31,18 @@
   transition: transform var(--time) var(--function-cubic);
 
   min-height: 609px;
-  width: 450px;
+  max-width: 450px;
+  width: calc(100% - 20px);
 
   background-color: var(--modal-background-color);
   box-shadow: var(--modal-box-shadow);
   border-radius: 4px;
+
+  @media (min-width: 480px) {
+    width: 450px;
+    max-width: 100%;
+    min-height: 609px;
+  }
 
   @media (min-width: 1200px) {
     width: 528px;

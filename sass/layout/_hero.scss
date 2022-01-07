@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 480px;
+  // max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 
@@ -22,7 +22,7 @@
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/tablet/hero-tablet-1x.jpg);
-    max-width: 768px;
+    // max-width: 768px;
   }
 
   @media screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
@@ -35,7 +35,7 @@
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/desktop/hero-desktop-1x.jpg);
-    max-width: 1600px;
+    // max-width: 1600px;
   }
 
   @media screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
